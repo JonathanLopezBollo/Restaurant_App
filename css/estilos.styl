@@ -22,6 +22,7 @@ body
 	border 0px
 	font-family Arial
 	font-size 15.4px
+	
 
 .btn
 	font-size 17px
@@ -34,48 +35,75 @@ body
 select
 	height 32px
 	
-.titulo_mesas
+.titulo_menu
 		
 		font-size 18px
 		font-weight bold
 		background azul_suave
 		height 1.7em
 		color white
+		&.titulo_mesas //hereda de titulo mesas
+			background azul_suave
+		&.titulo_productos //hereda de titulo mesas
+			background gris
+		
 		
 .mesa_disponibilidad
 			background verdoso2
 			color white
 			font-weight bold
-	
-.menu_mesas 
 
+
+	
+.menu
 	border-right 2px solid azul
-	width 20%
-	height 900px
-	float left
 	text-align center
 
-
-	
-	.form_mesas
-		table
+	.form_menu
+		.tabla_menu
 			width 100%
 			text-align center
-			
-		tr
-			
+		tr		
 			select
 				text-align center
 				width 100%
-		td
-			
+		td		
 			border 1px solid white
 			padding 1.5%
 			label
 				font-weight bold				
 			textarea
 				width 99%
-	
+	//estilo para tablas accediendo class="menu tabla menu"
+	.tabla_menu
+			width 100%
+			text-align center
+		tr		
+			select
+				text-align center
+				width 100%
+		td		
+			border 1px solid white
+			padding 1.5%
+			label
+				font-weight bold				
+			textarea
+				width 99%
+
+	&.Menu_Mesas //hereda de menu
+		float left
+		width 20%
+		
+	&.Menu_Productos //hereda de menu
+		float left
+		width 30%	
+	&.categoria_productos //hereda de menu
+		float right
+		text-align center
+		width 70%
+		border 2px solid gris
+		
+			
 	
 .mapa_mesas
 	
@@ -109,7 +137,7 @@ nav
 	//margin-bottom 2px
 	
 	
-	.menu	
+	.menu_nav	
 		
 		margin 0
 		overflow hidden
@@ -176,12 +204,7 @@ nav
 		
 /* CSS PARA PRODUCTOS*/
 
-.Menu_Productos
-	border-right 2px solid azul
-	width 30%
-	height 900px
-	float left
-	text-align center
+
 				
 				
 		
