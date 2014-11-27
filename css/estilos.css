@@ -60,6 +60,7 @@ select {
 }
 .mapa_mesas table tr td {
   margin: 10px;
+  display: inline-block;
   padding: 0.5em;
   text-align: center;
   font-size: 50px;
@@ -88,6 +89,7 @@ nav .menu .li-logo {
 nav .menu .sesion {
   margin-left: 40%;
   right: 80px;
+  top: 3px;
   position: absolute;
 }
 nav .menu li {
@@ -129,4 +131,12 @@ nav .menu li .icon-sesion:before {
 nav .menu li .icon-sesion:after {
   font-family: "iconos";
   content: "\e61e";
+}
+/* CSS PARA PRODUCTOS*/
+.Menu_Productos {
+  border-right: 2px solid #34c6cd;
+  width: 30%;
+  height: 900px;
+  float: left;
+  text-align: center;
 }
