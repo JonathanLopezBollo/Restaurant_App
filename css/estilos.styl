@@ -1,7 +1,12 @@
 verdoso = #1ABC9C
+verdoso2= #2ecc71
 azul =#34C6CD
+azul_suave=#008fd5
 azul_fuerte= #3B5998
 naranja=#e74c3c
+amarillo=#ffcc05
+gris= #213338
+rojo=#df4639
 @font-face {
 	font-family: 'iconos';
 	src:url('../fonts/icomoon.eot?-i1ixs1');
@@ -17,22 +22,67 @@ body
 	border 0px
 	font-family Arial
 	font-size 15.4px
+
+.btn
+	font-size 17px
+	border-radius 5px
+	border 1px solid azul
+	background verdoso2
+	color white
+	font-weight bold
+	
+select
+	height 32px
+	
+.titulo_mesas
+		
+		font-size 18px
+		font-weight bold
+		background azul_suave
+		height 1.7em
+		color white
+		
+.mesa_disponibilidad
+			background verdoso2
+			color white
+			font-weight bold
 	
 .menu_mesas
-	border-right 3px solid azul
+
+	border-right 2px solid azul
 	width 20%
 	height 900px
 	float left
-		
+	text-align center
+
+
+	
+	.form_mesas
+		table
+			width 100%
+			text-align center
+			
+		tr
+			
+			select
+				text-align center
+				width 100%
+		td
+			
+			border 1px solid white
+			padding 1.5%
+			label
+				font-weight bold				
+			textarea
+				width 99%
+	
+	
 .mapa_mesas
 	
 	table
-
 		tr
-			
 			td
 				margin 10px
-				display: inline-block;
 				padding 0.5em
 				text-align center
 				font-size 50px
@@ -54,7 +104,8 @@ body
 nav
 	background verdoso
 	margin 0
-	border-bottom 2px solid naranja
+	//border-bottom 2px solid naranja
+	//margin-bottom 2px
 	
 	
 	.menu	

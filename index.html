@@ -23,9 +23,55 @@
 		</nav>	
 		
 		<section class="menu_mesas">
-			<span>Mesa actual</span>
+			
+			<form class="form_mesas" action="#" metho="">
+				<table>
+					<tr>
+						<td colspan="4" class="titulo_mesas">Mesas</td>
+					</tr>
+					<tr  class="mesa_disponibilidad">
+						<td>Mesa:</td>
+						<td>1</td>
+						<td>Estado:</td>
+						<td>Disponible</td>
+					</tr>
+					<tr>
+						<td><label for="num_persons">Personas:</label></td>
+						<td colspan="3">
+							<select class"mesas_selects" id="num_persons" name="num_persons" size="1">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="nombre_mesero">Mesero:</label></td>
+						<td colspan="3">
+							<select class"mesas_selects" id="nombre_mesero" name="nombre_mesero" size="1">
+								<option value="1">Esau Castellanos Juarez</option>
+								<option value="2">Geovanni Reyes Espinosa</option>
+								<option value="3">Jonathan xD</option>
+							</select>
+						</td>
+					</tr>
+				<tr>
+					<td><label for="comentarios">Comentarios: </label></td>
+					<td colspan="3">
+						<textarea name="cometarios" placeholder="¿Algun detalle en la mesa?" id=""rows="3"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td id="btns_form" colspan="4">
+						<input class="btn" type="submit" value="Abrir mesa">
+					</td>
+				</tr>
 
-
+				</table>
+			</form>
+			<hr>
 		</section>
 
 		<section class="mapa_mesas">
@@ -41,13 +87,14 @@
 					<td> 1</td>
 				</tr>
 			</table>		
-			<article>
-				
-			</article>
+			
+
 		</section>
 	
 	</body>
 </html>
+
+
 
 
 
