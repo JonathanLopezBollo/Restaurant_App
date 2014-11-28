@@ -7,6 +7,12 @@ naranja=#e74c3c
 amarillo=#ffcc05
 gris= #213338
 rojo=#df4639
+marron= #efeee5
+casi_gris=#f9f9f9
+fondo_gris= #e0e0e0
+borde_gris=#cccccc
+azul_btn=#007196;
+
 @font-face {
 	font-family: 'iconos';
 	src:url('../fonts/icomoon.eot?-i1ixs1');
@@ -18,11 +24,18 @@ rojo=#df4639
 	font-style: normal;
 }
 
+html
+	height:100%;
+	margin 0
+
 body
 	border 0px
-	font-family Arial
+	margin 0
+	font-family: sans-serif;
 	font-size 15.4px
-	
+	background fondo_gris
+	height:100%;
+
 
 .btn
 	font-size 17px
@@ -32,6 +45,33 @@ body
 	color white
 	font-weight bold
 	
+.btn_eliminar
+	//background red
+	color white
+	font-size 16px
+	font-weight normal
+	text-decoration none
+	background red
+	padding .2em
+	margin 1
+	
+	&:before
+		font-family "iconos"
+		content "\e61b"	
+
+.btn_editar
+	color white
+	background azul_btn
+	font-size 16px
+	font-weight normal
+	text-decoration none
+	padding  0.2em
+	margin 1
+	&:before
+		font-family "iconos"
+		content "\e601"	
+		
+	
 select
 	height 32px
 	
@@ -39,7 +79,6 @@ select
 		
 		font-size 18px
 		font-weight bold
-		background azul_suave
 		height 1.7em
 		color white
 		&.titulo_mesas //hereda de titulo mesas
@@ -53,59 +92,84 @@ select
 			color white
 			font-weight bold
 
+//CSS PARA TABLAS
+.table_menu
+	text-align center
+	background verdoso2
+	font-weight bold
+	width 98.5%
+	height 100%
+	margin 0.5%
+	.table_head
+		color white
+		
+		border 1px solid white
+		tr
+			th
+				height 2em
+				font-size 18px
+				background gris
+				border 1px solid gris
+			td
+				background verdoso2		
+				border 1px solid gris
+				font-size 16px
+			
+	.table_body
+		tr
+			td
+				background white
+				border 1px solid gris
+				
+		.fila_par
+			td
+				background casi_gris
+	
 
+
+				
+.secciones
+	margin-left 5%
+	width 90%
+	height 22%
+	border 1px solid black
+	
+.submenu
+	height 30%	
 	
 .menu
-	border-right 2px solid azul
 	text-align center
-
-	.form_menu
-		.tabla_menu
-			width 100%
-			text-align center
-		tr		
-			select
-				text-align center
-				width 100%
-		td		
-			border 1px solid white
-			padding 1.5%
-			label
-				font-weight bold				
-			textarea
-				width 99%
-	//estilo para tablas accediendo class="menu tabla menu"
-	.tabla_menu
-			width 100%
-			text-align center
-		tr		
-			select
-				text-align center
-				width 100%
-		td		
-			border 1px solid white
-			padding 1.5%
-			label
-				font-weight bold				
-			textarea
-				width 99%
+	background white
+	height 94%
+	margin 0.3%
 
 	&.Menu_Mesas //hereda de menu
 		float left
-		width 20%
-		
+		width 20.4%
+		height 94%
 	&.Menu_Productos //hereda de menu
+		margin-right 0%
+		border 1px solid borde_gris
 		float left
-		width 30%	
+		width 20.4%	
 	&.categoria_productos //hereda de menu
+		margin 0.3%
+		margin-left 0%
+		border 1px solid borde_gris
 		float right
 		text-align center
-		width 70%
-		border 2px solid gris
-		
-			
+		width 78.5%
+		height 94%
 	
 .mapa_mesas
+	background white
+	margin 0.3%
+	margin-left 0%
+	border 1px solid borde_gris
+	float right
+	text-align center
+	width 78.5%
+	height 94%
 	
 	table
 		tr
@@ -127,13 +191,13 @@ select
 				
 				
 				
-			
+
 		
 		
 nav
 	background verdoso
 	margin 0
-	//border-bottom 2px solid naranja
+	border-bottom 1px solid black
 	//margin-bottom 2px
 	
 	
@@ -165,7 +229,9 @@ nav
 				margin 0 0.8em
 				text-decoration none
 				display inline-block
-			
+		
+				span
+						//font-weight bold
 			//clases para colocar los inconos del menu
 			.icon-inicio
 				&:before
@@ -199,6 +265,7 @@ nav
 				&:after
 					font-family "iconos"
 					content "\e61e"
+			
 
 
 		

@@ -11,11 +11,11 @@
 		<nav>
 			<ul class="menu_nav">
 				
-					<li class="li-logo"><a class="icon-inicio" href="#"> Restaurante</a></li>
-					<li><a class="icon-restaurant" href="#"> Mesas</a></li>
-					<li><a class="icon-productos"  href="#"> Productos</a></li>
-					<li><a class="icon-reportes"   href="#"> Reportes</a></li>
-					<li><a class="icon-config" 	   href="#"> Configuraciones</a></li>
+					<li class="li-logo"><a class="icon-inicio" href="#"><span> Restaurante </span></a></li>
+					<li><a class="icon-restaurant" href="#"> <span> Mesas </span></a></li>
+					<li><a class="icon-productos"  href="#"> <span> Productos </span></a></li>
+					<li><a class="icon-reportes"   href="#"> <span> Reportes </span></a></li>
+					<li><a class="icon-config" 	   href="#"> <span> Configuraciones </span></a></li>
 
 					<li class="sesion"> <a class="icon-sesion" href="#">  Sesión </a></li>
 				
@@ -24,67 +24,140 @@
 <!-- --------------------------------------------!-->		
 
 		<section class="menu Menu_Productos">
-			
-			<form class="form_menu" action="#" metho="">
-				<table class="tabla_menu">
-					<tr>
-						<td colspan="4" class="titulo_menu titulo_productos">Productos</td>
-					</tr>
-					<tr  class="mesa_disponibilidad">
-						<td>Mesa:</td>
-						<td>1</td>
-						<td>Estado:</td>
-						<td>Disponible</td>
-					</tr>
-					<tr>
-						<td><label for="num_persons">Personas:</label></td>
-						<td colspan="3">
-							<select class"mesas_selects" id="num_persons" name="num_persons" size="1">
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-								<option value="5">5</option>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td><label for="nombre_mesero">Mesero:</label></td>
-						<td colspan="3">
-							<select class"mesas_selects" id="nombre_mesero" name="nombre_mesero" size="1">
-								<option value="1">Esau Castellanos Juarez</option>
-								<option value="2">Geovanni Reyes Espinosa</option>
-								<option value="3">Jonathan xD</option>
-							</select>
-						</td>
-					</tr>
-				<tr>
-					<td><label for="comentarios">Comentarios: </label></td>
-					<td colspan="3">
-						<textarea name="cometarios" placeholder="¿Algun detalle en la mesa?" id=""rows="3"></textarea>
-					</td>
-				</tr>
-				<tr>
-					<td id="btns_form" colspan="4">
-						<input class="btn" type="submit" value="Abrir mesa">
-					</td>
-				</tr>
-
+			<article class="submenu">
+				<table class="table_menu">
+					<thead class="table_head">
+						<tr>
+							<th colspan="2">Productos</th>
+						</tr>
+						<tr>
+							<td>Producto:</td>
+							<td>Cerveza XX 355ml </td>
+						</tr>
+					</thead>
+					<tbody class="table_body">
+						<tr>
+							<td><label>Categoria:</label></td>
+							<td >Bebidas</td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>Precio:</label></td>
+							<td >$20</td>
+						</tr>
+						<tr>
+							<td><label>Precio de venta:</label></td>
+							<td >$10</td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>Código:</label></td>
+							<td >123</td>
+						</tr>
+						<tr>
+							<td><label>Existencia:</label></td>
+							<td >10</td>
+						</tr>
+					</tbody>
 				</table>
-			</form>
+			</article>
 			<hr>
+			<article class="submenu">
+				<table class="table_menu">
+					<thead class="table_head">
+						<tr>
+							<th colspan="2">Ingredientes</th>
+						</tr>
+						<tr>
+							<td>Producto:</td>
+							<td>Cerveza XX 355ml </td>
+						</tr>
+					</thead>
+					<tbody class="table_body">
+						<tr>
+							<td><label>Categoria:</label></td>
+							<td >Bebidas</td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>Precio:</label></td>
+							<td >$20</td>
+						</tr>
+						<tr>
+							<td><label>Precio de venta:</label></td>
+							<td >$10</td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>Código:</label></td>
+							<td >123</td>
+						</tr>
+						<tr>
+							<td><label>Existencia:</label></td>
+							<td >10</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+
 		</section>		
 		
 		<section  class=" menu categoria_productos">
-				
-			<table class="tabla_menu">
-				<tr>
-					<td>
-						Clasificacion de productos
-					</td>
-				</tr>
-			</table>
-
+			<article class="secciones">
+				<table class="table_menu">
+						<thead class="table_head">
+							<tr>
+								<th colspan="6">Bebidas</th>
+							</tr>
+							<tr>
+								<td>Código:</td>
+								<td>Producto </td>
+								<td>Costo </td>
+								<td>Precio</td>
+								<td ></td>
+								<td ></td>
+							</tr>
+						</thead>
+						<tbody class="table_body">
+							<tr>
+								<td><label>0001</label></td>
+								<td >Ceveza XX 355ml</td>
+								<td >$11</td>
+								<td >$20</td>
+								<td ><a href="#" class="btn_editar"> Editar</a></td>
+								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+							</tr>
+							<tr class="fila_par">
+								<td><label>0001</label></td>
+								<td >Ceveza XX 355ml</td>
+								<td >$11</td>
+								<td >$20</td>
+								<td ><a href="#" class="btn_editar"> Editar</a></td>
+								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+							</tr>
+							<tr>
+								<td><label>0001</label></td>
+								<td >Ceveza XX 355ml</td>
+								<td >$11</td>
+								<td >$20</td>
+								<td ><a href="#" class="btn_editar"> Editar</a></td>
+								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+							</tr>
+							<tr class="fila_par">
+								<td><label>0001</label></td>
+								<td >Ceveza XX 355ml</td>
+								<td >$11</td>
+								<td >$20</td>
+								<td ><a href="#" class="btn_editar"> Editar</a></td>
+								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+							</tr>
+							<tr>
+								<td><label>0001</label></td>
+								<td >Ceveza XX 355ml</td>
+								<td >$11</td>
+								<td >$20</td>
+								<td ><a href="#" class="btn_editar"> Editar</a></td>
+								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+							</tr>
+						</tbody>
+				</table>
+			</article>		
 		</section>
 	
 	</body>

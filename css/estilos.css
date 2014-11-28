@@ -5,10 +5,17 @@
   font-weight: normal;
   font-style: normal;
 }
+html {
+  height: 100%;
+  margin: 0;
+}
 body {
   border: 0px;
-  font-family: Arial;
+  margin: 0;
+  font-family: sans-serif;
   font-size: 15.4px;
+  background: #e0e0e0;
+  height: 100%;
 }
 .btn {
   font-size: 17px;
@@ -18,13 +25,38 @@ body {
   color: #fff;
   font-weight: bold;
 }
+.btn_eliminar {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  background: #f00;
+  padding: 0.2em;
+  margin: 1;
+}
+.btn_eliminar:before {
+  font-family: "iconos";
+  content: "\e61b";
+}
+.btn_editar {
+  color: #fff;
+  background: #007196;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0.2em;
+  margin: 1;
+}
+.btn_editar:before {
+  font-family: "iconos";
+  content: "\e601";
+}
 select {
   height: 32px;
 }
 .titulo_menu {
   font-size: 18px;
   font-weight: bold;
-  background: #008fd5;
   height: 1.7em;
   color: #fff;
 }
@@ -39,59 +71,80 @@ select {
   color: #fff;
   font-weight: bold;
 }
+.table_menu {
+  text-align: center;
+  background: #2ecc71;
+  font-weight: bold;
+  width: 98.5%;
+  height: 100%;
+  margin: 0.5%;
+}
+.table_menu .table_head {
+  color: #fff;
+  border: 1px solid #fff;
+}
+.table_menu .table_head tr th {
+  height: 2em;
+  font-size: 18px;
+  background: #213338;
+  border: 1px solid #213338;
+}
+.table_menu .table_head tr td {
+  background: #2ecc71;
+  border: 1px solid #213338;
+  font-size: 16px;
+}
+.table_menu .table_body tr td {
+  background: #fff;
+  border: 1px solid #213338;
+}
+.table_menu .table_body .fila_par td {
+  background: #f9f9f9;
+}
+.secciones {
+  margin-left: 5%;
+  width: 90%;
+  height: 22%;
+  border: 1px solid #000;
+}
+.submenu {
+  height: 30%;
+}
 .menu {
-  border-right: 2px solid #34c6cd;
   text-align: center;
-}
-.menu .form_menu .tabla_menu {
-  width: 100%;
-  text-align: center;
-}
-.menu .form_menu tr select {
-  text-align: center;
-  width: 100%;
-}
-.menu .form_menu td {
-  border: 1px solid #fff;
-  padding: 1.5%;
-}
-.menu .form_menu td label {
-  font-weight: bold;
-}
-.menu .form_menu td textarea {
-  width: 99%;
-}
-.menu .tabla_menu {
-  width: 100%;
-  text-align: center;
-}
-.menu tr select {
-  text-align: center;
-  width: 100%;
-}
-.menu td {
-  border: 1px solid #fff;
-  padding: 1.5%;
-}
-.menu td label {
-  font-weight: bold;
-}
-.menu td textarea {
-  width: 99%;
+  background: #fff;
+  height: 94%;
+  margin: 0.3%;
 }
 .menu.Menu_Mesas {
   float: left;
-  width: 20%;
+  width: 20.4%;
+  height: 94%;
 }
 .menu.Menu_Productos {
+  margin-right: 0%;
+  border: 1px solid #ccc;
   float: left;
-  width: 30%;
+  width: 20.4%;
 }
 .menu.categoria_productos {
+  margin: 0.3%;
+  margin-left: 0%;
+  border: 1px solid #ccc;
   float: right;
   text-align: center;
-  width: 70%;
-  border: 2px solid #213338;
+  width: 78.5%;
+  height: 94%;
+}
+.mapa_mesas {
+  background: #fff;
+  margin: 0.3%;
+  margin-left: 0%;
+  border: 1px solid #ccc;
+  float: right;
+  text-align: center;
+  width: 78.5%;
+  height: 94%;
 }
 .mapa_mesas table tr td {
   margin: 10px;
@@ -113,6 +166,7 @@ select {
 nav {
   background: #1abc9c;
   margin: 0;
+  border-bottom: 1px solid #000;
 }
 nav .menu_nav {
   margin: 0;
