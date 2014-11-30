@@ -254,7 +254,7 @@ select {
   width: 98.5%;
   margin: 0.5%;
   margin-top: 3px;
-  height: 2.5em;
+  height: 2.6em;
   font-size: 15px;
   color: #fff;
   background: #213338;
@@ -277,6 +277,14 @@ select {
 }
 .nav_busqueda ul .li-botonera {
   margin-left: 5%;
+}
+.nav_busqueda ul .li-mapa {
+  margin-top: 10px;
+  right: 40px;
+  position: absolute;
+}
+.nav_busqueda.nav_menu_mesas {
+  background: #007196;
 }
 .secciones {
   margin-left: 2.5%;
@@ -315,9 +323,7 @@ select {
   width: 78.5%;
   height: 94%;
 }
-.mapa_mesas {
-  background: #fff;
-  margin: 0.3%;
+.menu.mapa_mesas {
   margin-left: 0%;
   border: 1px solid #ccc;
   float: right;
@@ -325,22 +331,34 @@ select {
   width: 68.5%;
   height: 94%;
 }
-.mapa_mesas table tr td {
-  margin: 10px;
+.table_mesas {
+  width: 100%;
+  height: 95%;
+}
+.mesa {
+  margin: 0;
   display: inline-block;
+  text-decoration: none;
   padding: 0.5em;
-  text-align: center;
-  font-size: 50px;
-  background: #e74c3c;
-  width: 100px;
-  height: 100px;
-  border: 4px solid #34c6cd;
+  font-size: 30px;
+  background: #df4639;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #213338;
   border-radius: 30px;
 }
-.mapa_mesas table tr td:after {
+.mesa:after {
   color: #fff;
+  font-size: 20px;
+  margin-left: 20px;
   font-family: "iconos";
-  content: "\e611";
+  content: "\e623";
+}
+.mesa.libre {
+  background: #2ecc71;
+}
+.mesa.ocupada {
+  background: #df4639;
 }
 .nav_principal {
   background: #1abc9c;
