@@ -23,69 +23,105 @@
 		</nav>	
 <!-- --------------------------------------------!-->		
 		<section class="menu Menu_Mesas">
-			<table class="table_menu">
-					<thead class="table_head table_head_verde">
+			<div class"submenu">
+				<table class="table_menu">
+						<thead class="table_head table_head_verde">
+							<tr>
+								<th><span class="icon-cubiertos"></span> Mesas</th>
+								<th><a class="btn btn_unir" href=""> Unir Mesa</a></th>
+							</tr>
+						</thead>
+						<tbody class="table_body">
+							<tr class="fila-secundaria fila_verde">
+								<td >Num. Mesa:</td>
+								<td >1</td>
+							</tr>
+							<tr class="fila_par">
+								<td ><label>Num. Personas:</label></td>
+								<td >4</td>
+							</tr>
+							
+							
+							<tr>
+								<td><label>Mesero:</label></td>
+								<td>Geovanni Ventura Mijangos</td>
+							</tr>
+							
+							<tr  class="fila_par">
+								<td><label>Comentarios:</label></td>
+								<td>Ninguno</td>
+							</tr>
+
+							<tr>
+								<td><label>Tipo:</label></td>
+								<td>Unida</td>
+							</tr>
+
+						</tbody>
+				</table>
+			</div>
+
+			<div class"submenu">
+				<table class="table_menu">
+						<tbody class="table_body body_form">
+							<tr class="fila-secundaria fila_verdoso" >
+							<td colspan="4"> <span class="icon-nuevo"></span> Unir mesa</td>
+							</tr>
+							<tr>
+								<td colspan="1">Unir con mesa: </td>
+								<td colspan="2">
+									<select class="select_formulario" class="select_categoria" name="select_tipo">
+										<option value="">Mesa 2</option>
+										<option value="">Mesa 4</option>
+										<option value="">Mesa 4</option>
+										<option value="">Mesa 5</option>
+									</select>
+								</td>
+								<th><a class="btn btn_agregar" href=""> Unir Mesa</a></th>
+							</tr>
+						</tbody>
+				</table>
+			</div>	
+
+			<div class"submenu">
+				<table class="table_menu">
+						<tbody class="table_body body_form">
+							<tr class="fila-secundaria" >
+								<td colspan="4"> <span class="icon-nuevo"></span> Agregar consumo</td>
+							</tr>
+							<tr>
+								<td>Cantidad</td>
+								<td>Producto</td>
+								<td>Precio</td>
+								<td></td>
+							</tr>
+							<tr class="fila_par">
+								<td >
+									<select class="select_formulario" class="select_categoria" name="select_tipo">
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">4</option>
+										<option value="">4</option>
+										<option value="">5</option>
+									</select>
+								</td>
+								
+								<td><input class="input_formulario" type="text" placeholder="Producto"/> </td>
+								<td>$</td>
+								<td> <a class="btn btn_agregar" href=""></a> </td>
+							</tr>
+						</tbody>
+				</table>
+			</div>
+
+			<div class"submenu">
+				<table class="table_menu">
+					<thead class="table_head table_head_gris">
 						<tr>
-							<th colspan="4"><span class="icon-cubiertos"></span> Mesas</th>
+							<th colspan="4">Consumo</th>
 						</tr>
 					</thead>
 					<tbody class="table_body body_form">
-						<tr class="fila-secundaria fila_verde">
-							<td colspan="2">Num. Mesa:</td>
-							<td colspan="3">1</td>
-						</tr>
-						<tr class="fila_par body">
-							<td colspan="2"><label>Num. Personas:</label></td>
-							<td colspan="2">4</td>
-						</tr>
-						
-						
-						<tr>
-							<td colspan="2"><label>Mesero:</label></td>
-							<td colspan="2">Geovanni Ventura Mijangos</td>
-						</tr>
-						
-						<tr  class="fila_par">
-							<td colspan="2"><label>Comentarios:</label></td>
-							<td colspan="2"></td>
-						</tr>
-						
-						<tr class="fila_espacio">
-							<td colspan="4"></td>
-						</tr>					
-
-						<tr class="fila-secundaria" >
-							<td colspan="4"> <span class="icon-nuevo"></span> Agregar consumo</td>
-						</tr>
-						<tr>
-							<td>Cantidad</td>
-							<td>Producto</td>
-							<td>Precio</td>
-							<td></td>
-						</tr>
-						<tr class="fila_par">
-							<td >
-								<select class="select_formulario" class="select_categoria" name="select_tipo">
-									<option value="">1</option>
-									<option value="">2</option>
-									<option value="">4</option>
-									<option value="">4</option>
-									<option value="">5</option>
-								</select>
-							</td>
-							
-							<td><input class="input_formulario" type="text" placeholder="Producto"/> </td>
-							<td>$</td>
-							<td> <a class="btn btn_agregar" href=""></a> </td>
-						</tr>
-
-						<tr class="fila_espacio">
-							<td colspan="4"></td>
-						</tr>
-
-						<tr class="fila-secundaria fila_verdoso">
-							<td colspan="4">Consumo</td>
-						</tr>
 
 						<tr class="fila_par">
 							<td >1</td>
@@ -97,42 +133,25 @@
 							<td >4</td>
 							<td>Cerveza XX 455ml</td>
 							<td>$ 80</td>
-							<td><a class="btn btn_eliminar" href=""></a></td>
+							<td><a class="btn btn_eliminar" href="#"></a></td>
 						</tr>
-
-						<tr class="fila_espacio">
-							<td colspan="4"></td>
-						</tr>
-
-
-						<tr class="fila-secundaria" >
-							<td colspan="4"> <span class="icon-nuevo"></span> Unir mesa</td>
+					
+						<tr>
+							<td colspan="2">Total</td>
+							<td colspan="1">$100</td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>Unir con mesa</td>
-							<td colspan="2">
-								<select class="select_formulario" class="select_categoria" name="select_tipo">
-									<option value="">Mesa 2</option>
-									<option value="">Mesa 4</option>
-									<option value="">Mesa 4</option>
-									<option value="">Mesa 5</option>
-								</select>
-							</td>
-						</tr>
-
-						<tr>
-							<td colspan="4"></td>
-						</tr>
-						<tr class="fila_par">
-							<td >Cantidad</td>
-							<td colspan="2"><input class="input_formulario" type="text" placeholder="Cantidad"/> </td>
-						</tr>
-
-						<tr class="fila_boton">
-							<td colspan="4"><a class="btn btn_aceptar" href=""> Abrir mesa</a></td>
+							<td colspan="2"></td>
+							<td colspan="1"><a class="btn btn_cobrar" href=""> Cobrar</a></td>
+							<td></td>
 						</tr>
 					</tbody>
 				</table>
+			</div>
+			
+				
+
 		</section>
 		
 		<section class="mapa_mesas">

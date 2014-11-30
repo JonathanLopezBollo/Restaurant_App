@@ -50,12 +50,27 @@ body {
   font-family: "iconos";
   content: "\e601";
 }
+.btn.btn_unir {
+  color: #fff;
+}
+.btn.btn_unir:before {
+  font-family: "iconos";
+  content: "\e621";
+}
 .btn.btn_editar_azul {
   background: #008fd5;
 }
 .btn.btn_editar_azul:before {
   font-family: "iconos";
   content: "\e601";
+}
+.btn.btn_cobrar {
+  background: #008fd5;
+  padding: 0.3em;
+}
+.btn.btn_cobrar:before {
+  font-family: "iconos";
+  content: "\e61d";
 }
 .btn.btn_agregar {
   background: #fff;
@@ -140,6 +155,7 @@ select {
   width: 98.5%;
   margin: 0.5%;
   margin-top: 3px;
+  margin-bottom: 6%;
   border: 1px solid #213338;
 }
 .table_menu .table_head {
@@ -270,8 +286,8 @@ select {
   margin-top: 2%;
 }
 .submenu {
-  height: 60%;
-  margin-bottom: 50%;
+  height: 30%;
+  margin-bottom: 10%;
 }
 .menu {
   text-align: center;
