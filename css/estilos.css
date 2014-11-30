@@ -17,14 +17,6 @@ body {
   background: #e0e0e0;
   height: 100%;
 }
-.btn_aceptar {
-  font-size: 17px;
-  border-radius: 5px;
-  border: 1px solid #34c6cd;
-  background: #2ecc71;
-  color: #fff;
-  font-weight: bold;
-}
 .btn {
   color: #fff;
   font-size: 16px;
@@ -32,6 +24,17 @@ body {
   text-decoration: none;
   padding: 0.2em;
   margin: 1;
+}
+.btn.btn_aceptar {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0.5em;
+  background: #2ecc71;
+  border: 1px solid #1abc9c;
+}
+.btn.btn_aceptar:before {
+  font-family: "iconos";
+  content: "\e618";
 }
 .btn.btn_eliminar {
   background: #f00;
@@ -91,7 +94,7 @@ body {
   color: #fff;
   font-size: 16px;
   font-weight: normal;
-  text-decoration: nones;
+  text-decoration: none;
 }
 .icon-archivero:before {
   font-family: "iconos";
@@ -103,6 +106,13 @@ body {
 .icon-nuevo:before {
   font-family: "iconos";
   content: "\e621";
+}
+.icon-cubiertos {
+  font-size: 14px;
+}
+.icon-cubiertos:before {
+  font-family: "iconos";
+  content: "\e623";
 }
 select {
   height: 28px;
@@ -125,12 +135,12 @@ select {
   font-weight: bold;
 }
 .table_menu {
-  text-align: center;
   background: #fff;
   font-weight: bold;
   width: 98.5%;
   margin: 0.5%;
   margin-top: 3px;
+  border: 1px solid #213338;
 }
 .table_menu .table_head {
   color: #fff;
@@ -157,6 +167,15 @@ select {
   background: #efeee5;
   color: #213338;
 }
+.table_menu .table_head.table_head_verde tr th {
+  background: #007196;
+  color: #fff;
+}
+.table_menu .table_head.table_head_verde tr td {
+  background: #1abc9c;
+  color: #213338;
+  border: 1px solid #213338;
+}
 .table_menu .table_body tr td {
   background: #fff;
   border: 1px solid #213338;
@@ -166,15 +185,31 @@ select {
   background: #f9f9f9;
 }
 .table_menu .table_body .fila-secundaria td {
-  background: #1abc9c;
+  background: #008fd5;
   color: #fff;
   border: 1px solid #213338;
   font-size: 16px;
-  height: 1.4em;
+  height: 1.7em;
+}
+.table_menu .table_body .fila-secundaria.fila_verde td {
+  background: #1abc9c;
+}
+.table_menu .table_body .fila-secundaria.fila_verdoso td {
+  background: #2ecc71;
+}
+.table_menu .table_body .fila_boton td {
+  height: 3em;
 }
 .table_menu .table_body.table_body_secundario tr td {
   height: 1.8em;
   font-weight: normal;
+}
+.table_menu .table_body.body_form tr td {
+  border: 0;
+}
+.table_menu .table_body.body_form .fila_espacio,
+.table_menu .table_body.body_form td {
+  border: 1px solid #213338;
 }
 .select_categoria {
   color: #213338;
@@ -246,7 +281,7 @@ select {
 }
 .menu.Menu_Mesas {
   float: left;
-  width: 20.4%;
+  width: 30.4%;
   height: 94%;
 }
 .menu.Menu_Productos {
@@ -271,7 +306,7 @@ select {
   border: 1px solid #ccc;
   float: right;
   text-align: center;
-  width: 78.5%;
+  width: 68.5%;
   height: 94%;
 }
 .mapa_mesas table tr td {

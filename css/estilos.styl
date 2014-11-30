@@ -38,13 +38,7 @@ body
 	height:100%;
 
 
-.btn_aceptar
-	font-size 17px
-	border-radius 5px
-	border 1px solid azul
-	background verdoso2
-	color white
-	font-weight bold
+	
 	
 .btn
 	//background red
@@ -54,6 +48,15 @@ body
 	text-decoration none
 	padding .2em
 	margin 1
+	&.btn_aceptar
+		font-weight bold
+		font-size 14px
+		padding 0.5em
+		background verdoso2
+		border 1px solid verdoso
+		&:before
+			font-family "iconos"
+			content "\e618"	
 	&.btn_eliminar
 		background red
 		&:before
@@ -102,7 +105,7 @@ body
 		color white
 		font-size 16px
 		font-weight normal
-		text-decoration nones
+		text-decoration none
 		&:before
 			font-family "iconos"
 			content "\e60a"
@@ -111,6 +114,11 @@ body
 		&:before
 			font-family "iconos"
 			content "\e621"
+	&.icon-cubiertos
+		font-size 14px
+		&:before
+			font-family "iconos"
+			content "\e623"
 		
 select
 	height 28px
@@ -135,12 +143,12 @@ select
 
 //CSS PARA TABLAS
 .table_menu
-	text-align center
 	background white
 	font-weight bold
 	width 98.5%
 	margin 0.5%
 	margin-top 3px
+	border 1px solid gris		
 	.table_head
 		color white
 		border 1px solid white
@@ -165,6 +173,15 @@ select
 				td
 					background marron
 					color gris
+		&.table_head_verde
+			tr
+				th
+					background azul_btn
+					color white
+				td
+					background verdoso
+					color gris
+					border 1px solid gris
 	.table_body
 		tr
 			td
@@ -177,18 +194,35 @@ select
 				
 		.fila-secundaria
 			td
-				background verdoso	
+				background azul_suave
 				color white	
 				border 1px solid gris
 				font-size 16px
-				height 1.4em
+				height 1.7em
 				
+			&.fila_verde
+				td
+					background verdoso
+					
+			&.fila_verdoso
+				td
+					background verdoso2
+		.fila_boton
+			td
+				height 3em
+	
 		&.table_body_secundario
 			tr
 				td
 					height 1.8em
 					font-weight normal
-					
+		&.body_form//aqui para quitar los bordes internos de la tabla para formularios
+			tr
+				td
+					border 0	
+			.fila_espacio
+			td
+				border 1px solid gris		
 
 	
 
@@ -261,7 +295,7 @@ select
 
 	&.Menu_Mesas //hereda de menu
 		float left
-		width 20.4%
+		width 30.4%
 		height 94%
 	&.Menu_Productos //hereda de menu
 		margin-right 0%
@@ -284,7 +318,7 @@ select
 	border 1px solid borde_gris
 	float right
 	text-align center
-	width 78.5%
+	width 68.5%
 	height 94%
 	
 	table

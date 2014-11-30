@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Restaurant App</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilos.css">
+	</head >
+	<body>
+<!---------------- Menu principal---------------!-->		
+		<nav class="nav_principal">
+			<ul class="menu_nav">
+				
+					<li class="li-logo"><a class="icon-inicio" href="#"> Restaurante</a></li>
+					<li><a class="icon-restaurant" href="#"> Mesas</a></li>
+					<li><a class="icon-productos"  href="#"> Productos</a></li>
+					<li><a class="icon-reportes"   href="#"> Reportes</a></li>
+					<li><a class="icon-config" 	   href="#"> Configuraciones</a></li>
+			
+					<li class="sesion"> <a class="icon-sesion" href="#">  Sesión </a></li>
+
+			</ul>
+		</nav>	
+<!-- --------------------------------------------!-->		
+		<section class="menu Menu_Mesas">
+			<table class="table_menu">
+					<thead class="table_head table_head_verde">
+						<tr>
+							<th colspan="4"><span class="icon-cubiertos"></span> Mesas</th>
+						</tr>
+					</thead>
+					<tbody class="table_body body_form">
+						<tr class="fila-secundaria fila_verde">
+							<td colspan="2">Num. Mesa:</td>
+							<td colspan="3">1</td>
+						</tr>
+						<tr class="fila_par body">
+							<td colspan="2"><label>Num. Personas:</label></td>
+							<td colspan="2">4</td>
+						</tr>
+						
+						
+						<tr>
+							<td colspan="2"><label>Mesero:</label></td>
+							<td colspan="2">Geovanni Ventura Mijangos</td>
+						</tr>
+						
+						<tr  class="fila_par">
+							<td colspan="2"><label>Comentarios:</label></td>
+							<td colspan="2"></td>
+						</tr>
+						
+						<tr class="fila_espacio">
+							<td colspan="4"></td>
+						</tr>					
+
+						<tr class="fila-secundaria" >
+							<td colspan="4"> <span class="icon-nuevo"></span> Agregar consumo</td>
+						</tr>
+						<tr>
+							<td>Cantidad</td>
+							<td>Producto</td>
+							<td>Precio</td>
+							<td></td>
+						</tr>
+						<tr class="fila_par">
+							<td >
+								<select class="select_formulario" class="select_categoria" name="select_tipo">
+									<option value="">1</option>
+									<option value="">2</option>
+									<option value="">4</option>
+									<option value="">4</option>
+									<option value="">5</option>
+								</select>
+							</td>
+							
+							<td><input class="input_formulario" type="text" placeholder="Producto"/> </td>
+							<td>$</td>
+							<td> <a class="btn btn_agregar" href=""></a> </td>
+						</tr>
+
+						<tr class="fila_espacio">
+							<td colspan="4"></td>
+						</tr>
+
+						<tr class="fila-secundaria fila_verdoso">
+							<td colspan="4">Consumo</td>
+						</tr>
+
+						<tr class="fila_par">
+							<td >1</td>
+							<td>Fresas con crema</td>
+							<td>$ 20</td>
+							<td><a class="btn btn_eliminar" href=""></a></td>
+						</tr>
+						<tr class="fila_par">
+							<td >4</td>
+							<td>Cerveza XX 455ml</td>
+							<td>$ 80</td>
+							<td><a class="btn btn_eliminar" href=""></a></td>
+						</tr>
+
+						<tr class="fila_espacio">
+							<td colspan="4"></td>
+						</tr>
+
+
+						<tr class="fila-secundaria" >
+							<td colspan="4"> <span class="icon-nuevo"></span> Unir mesa</td>
+						</tr>
+						<tr>
+							<td>Unir con mesa</td>
+							<td colspan="2">
+								<select class="select_formulario" class="select_categoria" name="select_tipo">
+									<option value="">Mesa 2</option>
+									<option value="">Mesa 4</option>
+									<option value="">Mesa 4</option>
+									<option value="">Mesa 5</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="4"></td>
+						</tr>
+						<tr class="fila_par">
+							<td >Cantidad</td>
+							<td colspan="2"><input class="input_formulario" type="text" placeholder="Cantidad"/> </td>
+						</tr>
+
+						<tr class="fila_boton">
+							<td colspan="4"><a class="btn btn_aceptar" href=""> Abrir mesa</a></td>
+						</tr>
+					</tbody>
+				</table>
+		</section>
+		
+		<section class="mapa_mesas">
+			<table class="mesas">
+				<tr>
+					<td> 1</td>
+					<td> 1</td>
+					<td> 1</td>
+				</tr>
+				<tr>
+					<td> 2</td>
+					<td> 1</td>
+					<td> 1</td>
+				</tr>
+			</table>		
+			
+
+		</section>
+	
+	</body>
+</html>
+
+
+
+
+
+
