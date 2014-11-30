@@ -16,11 +16,11 @@ azul_btn=#007196;
 
 @font-face {
 	font-family: 'iconos';
-	src:url('../fonts/icomoon.eot?gdpy57');
-	src:url('../fonts/icomoon.eot?#iefixgdpy57') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?gdpy57') format('woff'),
-		url('../fonts/icomoon.ttf?gdpy57') format('truetype'),
-		url('../fonts/icomoon.svg?gdpy57#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-ng9f0');
+	src:url('../fonts/icomoon.eot?#iefix-ng9f0') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-ng9f0') format('woff'),
+		url('../fonts/icomoon.ttf?-ng9f0') format('truetype'),
+		url('../fonts/icomoon.svg?-ng9f0#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -38,7 +38,7 @@ body
 	height:100%;
 
 
-.btn
+.btn_aceptar
 	font-size 17px
 	border-radius 5px
 	border 1px solid azul
@@ -46,55 +46,67 @@ body
 	color white
 	font-weight bold
 	
-.btn_eliminar
+.btn
 	//background red
 	color white
 	font-size 16px
 	font-weight normal
 	text-decoration none
-	background red
 	padding .2em
 	margin 1
-	
-	&:before
-		font-family "iconos"
-		content "\e61b"	
-
-.btn_editar
-	color white
-	font-size 14px
-	font-weight normal
-	text-decoration none
-	padding  0.2em
-	margin 1	
-	&:before
-		font-family "iconos"
-		content "\e601"
-&.btn_editar_azul
-		background azul_btn
-	
-.btn_agregar
-	background white
-	color gris
-	font-size 14px
-	font-weight bold
-	text-decoration none
-	padding  0.3em	
-	&:before
-		font-family "iconos"
-		content "\e621"
+	&.btn_eliminar
+		background red
+		&:before
+			font-family "iconos"
+			content "\e61b"	
+	&.btn_editar	
+		color white
+		&:before
+			font-family "iconos"
+			content "\e601"
+	&.btn_editar_azul
+		background azul_suave
+		&:before
+			font-family "iconos"
+			content "\e601"
+	&.btn_agregar
+		background white
+		color gris
+		font-weight bold
+		font-size 14px
+		padding  0.3em	
+		&:before
+			font-family "iconos"
+			content "\e621"
 		
-.btn_ver
-	background white
-	color gris
-	font-size 14px
-	font-weight bold
-	text-decoration none
-	padding  0.3em	
-	&:before
-		font-family "iconos"
-		content "\e616"
+	&.btn_ver
+		background white
+		color gris
+		font-weight bold
+		font-size 14px
+		padding  0.3em	
+		&:before
+			font-family "iconos"
+			content "\e647"
+	&.btn_buscar
+		background white
+		color gris
+		font-weight bold
+		font-size 14px
+		padding  0.3em	
+		&:before
+			font-family "iconos"
+			content "\e64e"
 
+.icon-archivero
+		color white
+		font-size 16px
+		font-weight normal
+		text-decoration nones
+		&:before
+			font-family "iconos"
+			content "\e60a"
+		
 select
 	height 28px
 
@@ -138,13 +150,22 @@ select
 				border 1px solid gris
 				font-size 16px
 				height 1.5em	
+				
+		&.table_head_gris
+			tr
+				th
+					height 1.5em
+					background gray
+					color white
+				td
+					background marron
+					color gris
 	.table_body
 		tr
 			td
 				background white
 				border 1px solid gris
-				height 2em
-				
+				height 2em		
 		.fila_par
 			td
 				background casi_gris
@@ -156,10 +177,23 @@ select
 				border 1px solid gris
 				font-size 16px
 				height 1.4em
+				
+		&.table_body_secundario
+			tr
+				td
+					height 1.8em
+					font-weight normal
+					
+
+	
+
+
 
 .select_categoria
 	color gris
-	height 1.5em
+	height 1.6em
+input
+	color gris
 			
 .nav_busqueda
 	font-weight bold
@@ -176,6 +210,7 @@ select
 		li
 			margin-top 8px
 			display inline-block
+			margin-left 10px
 		.li-categoria
 			margin-left 0px
 			position absolute
@@ -188,11 +223,12 @@ select
 	
 				
 .secciones
-	margin-left 5%
-	width 90%
+	margin-left 2.5%
+	width 95%
 	height 25%
-	border 1px solid black
+	//border 1px solid black
 	margin-bottom 3%	
+	margin-top 2%	
 .submenu
 	height 60%	
 	margin-bottom 50%

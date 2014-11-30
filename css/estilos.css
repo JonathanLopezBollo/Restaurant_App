@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'iconos';
-  src: url("../fonts/icomoon.eot?gdpy57");
-  src: url("../fonts/icomoon.eot?#iefixgdpy57") format('embedded-opentype'), url("../fonts/icomoon.woff?gdpy57") format('woff'), url("../fonts/icomoon.ttf?gdpy57") format('truetype'), url("../fonts/icomoon.svg?gdpy57#icomoon") format('svg');
+  src: url("../fonts/icomoon.eot?-ng9f0");
+  src: url("../fonts/icomoon.eot?#iefix-ng9f0") format('embedded-opentype'), url("../fonts/icomoon.woff?-ng9f0") format('woff'), url("../fonts/icomoon.ttf?-ng9f0") format('truetype'), url("../fonts/icomoon.svg?-ng9f0#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@ body {
   background: #e0e0e0;
   height: 100%;
 }
-.btn {
+.btn_aceptar {
   font-size: 17px;
   border-radius: 5px;
   border: 1px solid #34c6cd;
@@ -25,57 +25,77 @@ body {
   color: #fff;
   font-weight: bold;
 }
-.btn_eliminar {
+.btn {
   color: #fff;
   font-size: 16px;
   font-weight: normal;
   text-decoration: none;
-  background: #f00;
   padding: 0.2em;
   margin: 1;
 }
-.btn_eliminar:before {
+.btn.btn_eliminar {
+  background: #f00;
+}
+.btn.btn_eliminar:before {
   font-family: "iconos";
   content: "\e61b";
 }
-.btn_editar {
+.btn.btn_editar {
   color: #fff;
-  font-size: 14px;
-  font-weight: normal;
-  text-decoration: none;
-  padding: 0.2em;
-  margin: 1;
 }
-.btn_editar:before {
+.btn.btn_editar:before {
   font-family: "iconos";
   content: "\e601";
 }
-.btn_editar_azul {
-  background: #007196;
+.btn.btn_editar_azul {
+  background: #008fd5;
 }
-.btn_agregar {
+.btn.btn_editar_azul:before {
+  font-family: "iconos";
+  content: "\e601";
+}
+.btn.btn_agregar {
   background: #fff;
   color: #213338;
-  font-size: 14px;
   font-weight: bold;
-  text-decoration: none;
+  font-size: 14px;
   padding: 0.3em;
 }
-.btn_agregar:before {
+.btn.btn_agregar:before {
   font-family: "iconos";
   content: "\e621";
 }
-.btn_ver {
+.btn.btn_ver {
   background: #fff;
   color: #213338;
-  font-size: 14px;
   font-weight: bold;
-  text-decoration: none;
+  font-size: 14px;
   padding: 0.3em;
 }
-.btn_ver:before {
+.btn.btn_ver:before {
   font-family: "iconos";
-  content: "\e616";
+  content: "\e647";
+}
+.btn.btn_buscar {
+  background: #fff;
+  color: #213338;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0.3em;
+}
+.btn.btn_buscar:before {
+  font-family: "iconos";
+  content: "\e64e";
+}
+.icon-archivero {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: nones;
+}
+.icon-archivero:before {
+  font-family: "iconos";
+  content: "\e60a";
 }
 select {
   height: 28px;
@@ -121,6 +141,15 @@ select {
   font-size: 16px;
   height: 1.5em;
 }
+.table_menu .table_head.table_head_gris tr th {
+  height: 1.5em;
+  background: #808080;
+  color: #fff;
+}
+.table_menu .table_head.table_head_gris tr td {
+  background: #efeee5;
+  color: #213338;
+}
 .table_menu .table_body tr td {
   background: #fff;
   border: 1px solid #213338;
@@ -136,9 +165,16 @@ select {
   font-size: 16px;
   height: 1.4em;
 }
+.table_menu .table_body.table_body_secundario tr td {
+  height: 1.8em;
+  font-weight: normal;
+}
 .select_categoria {
   color: #213338;
-  height: 1.5em;
+  height: 1.6em;
+}
+input {
+  color: #213338;
 }
 .nav_busqueda {
   font-weight: bold;
@@ -157,6 +193,7 @@ select {
 .nav_busqueda ul li {
   margin-top: 8px;
   display: inline-block;
+  margin-left: 10px;
 }
 .nav_busqueda ul .li-categoria {
   margin-left: 0px;
@@ -169,11 +206,11 @@ select {
   margin-left: 5%;
 }
 .secciones {
-  margin-left: 5%;
-  width: 90%;
+  margin-left: 2.5%;
+  width: 95%;
   height: 25%;
-  border: 1px solid #000;
   margin-bottom: 3%;
+  margin-top: 2%;
 }
 .submenu {
   height: 60%;
