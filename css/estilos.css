@@ -360,6 +360,12 @@ select {
 .mesa.ocupada {
   background: #df4639;
 }
+.mesa.grande {
+  width: 200px;
+}
+.mesa.mediana {
+  width: 130px;
+}
 .nav_principal {
   background: #1abc9c;
   margin: 0;
