@@ -2,6 +2,7 @@ verdoso = #1ABC9C
 verdoso2= #2ecc71
 azul =#34C6CD
 azul_suave=#008fd5
+azul_suave2=#008cba
 azul_fuerte= #3B5998
 naranja=#e74c3c
 amarillo=#ffcc05
@@ -15,11 +16,11 @@ azul_btn=#007196;
 
 @font-face {
 	font-family: 'iconos';
-	src:url('../fonts/icomoon.eot?-i1ixs1');
-	src:url('../fonts/icomoon.eot?#iefix-i1ixs1') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-i1ixs1') format('woff'),
-		url('../fonts/icomoon.ttf?-i1ixs1') format('truetype'),
-		url('../fonts/icomoon.svg?-i1ixs1#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?gdpy57');
+	src:url('../fonts/icomoon.eot?#iefixgdpy57') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?gdpy57') format('woff'),
+		url('../fonts/icomoon.ttf?gdpy57') format('truetype'),
+		url('../fonts/icomoon.svg?gdpy57#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -61,20 +62,43 @@ body
 
 .btn_editar
 	color white
-	background azul_btn
-	font-size 16px
+	font-size 14px
 	font-weight normal
 	text-decoration none
 	padding  0.2em
-	margin 1
+	margin 1	
 	&:before
 		font-family "iconos"
-		content "\e601"	
+		content "\e601"
+&.btn_editar_azul
+		background azul_btn
+	
+.btn_agregar
+	background white
+	color gris
+	font-size 14px
+	font-weight bold
+	text-decoration none
+	padding  0.3em	
+	&:before
+		font-family "iconos"
+		content "\e621"
 		
-	
+.btn_ver
+	background white
+	color gris
+	font-size 14px
+	font-weight bold
+	text-decoration none
+	padding  0.3em	
+	&:before
+		font-family "iconos"
+		content "\e616"
+
 select
-	height 32px
-	
+	height 28px
+
+
 .titulo_menu
 		
 		font-size 18px
@@ -95,14 +119,13 @@ select
 //CSS PARA TABLAS
 .table_menu
 	text-align center
-	background verdoso2
+	background white
 	font-weight bold
 	width 98.5%
-	height 100%
 	margin 0.5%
+	margin-top 3px
 	.table_head
 		color white
-		
 		border 1px solid white
 		tr
 			th
@@ -114,29 +137,66 @@ select
 				background verdoso2		
 				border 1px solid gris
 				font-size 16px
-			
+				height 1.5em	
 	.table_body
 		tr
 			td
 				background white
 				border 1px solid gris
+				height 2em
 				
 		.fila_par
 			td
 				background casi_gris
+				
+		.fila-secundaria
+			td
+				background verdoso	
+				color white	
+				border 1px solid gris
+				font-size 16px
+				height 1.4em
+
+.select_categoria
+	color gris
+	height 1.5em
+			
+.nav_busqueda
+	font-weight bold
+	width 98.5%
+	margin 0.5%
+	margin-top 3px
+	height 2.5em
+	font-size 15px
+	color white
+	background gris
+	padding 0
+	ul 
+		margin 0
+		li
+			margin-top 8px
+			display inline-block
+		.li-categoria
+			margin-left 0px
+			position absolute
+			
+		.li-buscar
+			margin-left 300px
+		.li-botonera
+			margin-left 5%
+			
 	
-
-
 				
 .secciones
 	margin-left 5%
 	width 90%
-	height 22%
+	height 25%
 	border 1px solid black
-	
+	margin-bottom 3%	
 .submenu
-	height 30%	
-	
+	height 60%	
+	margin-bottom 50%
+	//border 1px solid gris
 .menu
 	text-align center
 	background white
@@ -194,7 +254,7 @@ select
 
 		
 		
-nav
+.nav_principal
 	background verdoso
 	margin 0
 	border-bottom 1px solid black

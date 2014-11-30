@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'iconos';
-  src: url("../fonts/icomoon.eot?-i1ixs1");
-  src: url("../fonts/icomoon.eot?#iefix-i1ixs1") format('embedded-opentype'), url("../fonts/icomoon.woff?-i1ixs1") format('woff'), url("../fonts/icomoon.ttf?-i1ixs1") format('truetype'), url("../fonts/icomoon.svg?-i1ixs1#icomoon") format('svg');
+  src: url("../fonts/icomoon.eot?gdpy57");
+  src: url("../fonts/icomoon.eot?#iefixgdpy57") format('embedded-opentype'), url("../fonts/icomoon.woff?gdpy57") format('woff'), url("../fonts/icomoon.ttf?gdpy57") format('truetype'), url("../fonts/icomoon.svg?gdpy57#icomoon") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -40,8 +40,7 @@ body {
 }
 .btn_editar {
   color: #fff;
-  background: #007196;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   text-decoration: none;
   padding: 0.2em;
@@ -51,8 +50,35 @@ body {
   font-family: "iconos";
   content: "\e601";
 }
+.btn_editar_azul {
+  background: #007196;
+}
+.btn_agregar {
+  background: #fff;
+  color: #213338;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.3em;
+}
+.btn_agregar:before {
+  font-family: "iconos";
+  content: "\e621";
+}
+.btn_ver {
+  background: #fff;
+  color: #213338;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.3em;
+}
+.btn_ver:before {
+  font-family: "iconos";
+  content: "\e616";
+}
 select {
-  height: 32px;
+  height: 28px;
 }
 .titulo_menu {
   font-size: 18px;
@@ -73,11 +99,11 @@ select {
 }
 .table_menu {
   text-align: center;
-  background: #2ecc71;
+  background: #fff;
   font-weight: bold;
   width: 98.5%;
-  height: 100%;
   margin: 0.5%;
+  margin-top: 3px;
 }
 .table_menu .table_head {
   color: #fff;
@@ -93,22 +119,65 @@ select {
   background: #2ecc71;
   border: 1px solid #213338;
   font-size: 16px;
+  height: 1.5em;
 }
 .table_menu .table_body tr td {
   background: #fff;
   border: 1px solid #213338;
+  height: 2em;
 }
 .table_menu .table_body .fila_par td {
   background: #f9f9f9;
 }
+.table_menu .table_body .fila-secundaria td {
+  background: #1abc9c;
+  color: #fff;
+  border: 1px solid #213338;
+  font-size: 16px;
+  height: 1.4em;
+}
+.select_categoria {
+  color: #213338;
+  height: 1.5em;
+}
+.nav_busqueda {
+  font-weight: bold;
+  width: 98.5%;
+  margin: 0.5%;
+  margin-top: 3px;
+  height: 2.5em;
+  font-size: 15px;
+  color: #fff;
+  background: #213338;
+  padding: 0;
+}
+.nav_busqueda ul {
+  margin: 0;
+}
+.nav_busqueda ul li {
+  margin-top: 8px;
+  display: inline-block;
+}
+.nav_busqueda ul .li-categoria {
+  margin-left: 0px;
+  position: absolute;
+}
+.nav_busqueda ul .li-buscar {
+  margin-left: 300px;
+}
+.nav_busqueda ul .li-botonera {
+  margin-left: 5%;
+}
 .secciones {
   margin-left: 5%;
   width: 90%;
-  height: 22%;
+  height: 25%;
   border: 1px solid #000;
+  margin-bottom: 3%;
 }
 .submenu {
-  height: 30%;
+  height: 60%;
+  margin-bottom: 50%;
 }
 .menu {
   text-align: center;
@@ -163,61 +232,61 @@ select {
   font-family: "iconos";
   content: "\e611";
 }
-nav {
+.nav_principal {
   background: #1abc9c;
   margin: 0;
   border-bottom: 1px solid #000;
 }
-nav .menu_nav {
+.nav_principal .menu_nav {
   margin: 0;
   overflow: hidden;
 }
-nav .menu_nav .li-logo {
+.nav_principal .menu_nav .li-logo {
   margin-right: 40px;
 }
-nav .menu_nav .sesion {
+.nav_principal .menu_nav .sesion {
   margin-left: 40%;
   right: 80px;
   top: 3px;
   position: absolute;
 }
-nav .menu_nav li {
+.nav_principal .menu_nav li {
   display: inline-block;
 }
-nav .menu_nav li a {
+.nav_principal .menu_nav li a {
   color: #fff;
   padding: 0.7em;
   margin: 0 0.8em;
   text-decoration: none;
   display: inline-block;
 }
-nav .menu_nav li .icon-inicio:before {
+.nav_principal .menu_nav li .icon-inicio:before {
   color: #fff;
   font-size: 1.2em;
   font-family: "iconos";
   content: "\e600";
 }
-nav .menu_nav li .icon-restaurant:before {
+.nav_principal .menu_nav li .icon-restaurant:before {
   font-family: "iconos";
   content: "\e611";
 }
-nav .menu_nav li .icon-productos:before {
+.nav_principal .menu_nav li .icon-productos:before {
   font-family: "iconos";
   content: "\e602";
 }
-nav .menu_nav li .icon-reportes:before {
+.nav_principal .menu_nav li .icon-reportes:before {
   font-family: "iconos";
   content: "\e604";
 }
-nav .menu_nav li .icon-config:before {
+.nav_principal .menu_nav li .icon-config:before {
   font-family: "iconos";
   content: "\e60d";
 }
-nav .menu_nav li .icon-sesion:before {
+.nav_principal .menu_nav li .icon-sesion:before {
   font-family: "iconos";
   content: "\e60b";
 }
-nav .menu_nav li .icon-sesion:after {
+.nav_principal .menu_nav li .icon-sesion:after {
   font-family: "iconos";
   content: "\e61e";
 }

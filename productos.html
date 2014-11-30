@@ -8,7 +8,7 @@
 	</head >
 	<body>
 <!---------------- Menu principal---------------!-->		
-		<nav>
+		<nav class="nav_principal">
 			<ul class="menu_nav">
 				
 					<li class="li-logo"><a class="icon-inicio" href="#"><span> Restaurante </span></a></li>
@@ -28,39 +28,76 @@
 				<table class="table_menu">
 					<thead class="table_head">
 						<tr>
-							<th colspan="2">Productos</th>
-						</tr>
-						<tr>
-							<td>Producto:</td>
-							<td>Cerveza XX 355ml </td>
+							<th > Producto </th>
+							<th ><a href="#" class="btn_editar"> Editar</a></th>
 						</tr>
 					</thead>
 					<tbody class="table_body">
-						<tr>
-							<td><label>Categoria:</label></td>
-							<td >Bebidas</td>
-						</tr>
-						<tr class="fila_par">
-							<td><label>Precio:</label></td>
-							<td >$20</td>
+
+						<tr >
+							<td >Nombre:</td>
+							<td>Cerveza XX 355ml </td>
 						</tr>
 						<tr>
-							<td><label>Precio de venta:</label></td>
-							<td >$10</td>
-						</tr>
-						<tr class="fila_par">
-							<td><label>Código:</label></td>
+							<td ><label>Código:</label></td>
 							<td >123</td>
 						</tr>
+						
 						<tr>
-							<td><label>Existencia:</label></td>
+							<td ><label>Categoria:</label></td>
+							<td >Bebidas</td>
+						</tr>
+						<tr  class="fila_par">
+							<td ><label>Unidad:</label></td>
+							<td >Unidad</td>
+						</tr>
+						<tr >
+							<td ><label>Costo:</label></td>
+							<td >$20</td>
+						</tr>
+						<tr  class="fila_par">
+							<td ><label>Precio de venta:</label></td>
+							<td >$10</td>
+						</tr>
+						<tr>
+							<td ><label>Stock:</label></td>
 							<td >10</td>
+						</tr>
+						<tr  class="fila_par">
+							<td ><label>Descripción:</label></td>
+							<td >sdfdfdf</td>
+						</tr>
+						<tr>
+							<td ><label>Foto:</label></td>
+							<td >sin foto</td>
+						</tr>
+						<tr  class="fila_par">
+							<td ><label>Tipo:</label></td>
+							<td >Sin ingredientes</td>
+						</tr>
+						<tr>
+							<td colspan="2"></td>
+						</tr>					
+						<tr class="fila-secundaria" >
+							<td colspan="2">Ingredientes</td>
+						</tr>
+						<tr>
+							<td>Ingrediente</td>
+							<td>Cantidad</td>
+						</tr>
+						<tr class="fila_par">
+							<td >Muzzarela</td>
+							<td>0.2 Kg</td>
+						</tr>
+						<tr>
+							<td>Queso Oaxaca</td>
+							<td >0.5 Kg</td>
 						</tr>
 					</tbody>
 				</table>
 			</article>
-			<hr>
-			<article class="submenu">
+			
+			<!-- <article class="submenu">
 				<table class="table_menu">
 					<thead class="table_head">
 						<tr>
@@ -68,17 +105,17 @@
 						</tr>
 						<tr>
 							<td>Producto:</td>
-							<td>Cerveza XX 355ml </td>
+							<td>Queso Oaxaca</td>
 						</tr>
 					</thead>
 					<tbody class="table_body">
 						<tr>
 							<td><label>Categoria:</label></td>
-							<td >Bebidas</td>
+							<td >Quesos</td>
 						</tr>
 						<tr class="fila_par">
-							<td><label>Precio:</label></td>
-							<td >$20</td>
+							<td><label>Precio por kg:</label></td>
+							<td >$80</td>
 						</tr>
 						<tr>
 							<td><label>Precio de venta:</label></td>
@@ -90,74 +127,157 @@
 						</tr>
 						<tr>
 							<td><label>Existencia:</label></td>
-							<td >10</td>
+							<td >10 kg</td>
 						</tr>
 					</tbody>
 				</table>
 			</article>
+			!-->
 
 		</section>		
 		
 		<section  class=" menu categoria_productos">
-			<article class="secciones">
-				<table class="table_menu">
-						<thead class="table_head">
-							<tr>
-								<th colspan="6">Bebidas</th>
-							</tr>
-							<tr>
-								<td>Código:</td>
-								<td>Producto </td>
-								<td>Costo </td>
-								<td>Precio</td>
-								<td ></td>
-								<td ></td>
-							</tr>
-						</thead>
-						<tbody class="table_body">
-							<tr>
-								<td><label>0001</label></td>
-								<td >Ceveza XX 355ml</td>
-								<td >$11</td>
-								<td >$20</td>
-								<td ><a href="#" class="btn_editar"> Editar</a></td>
-								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
-							</tr>
-							<tr class="fila_par">
-								<td><label>0001</label></td>
-								<td >Ceveza XX 355ml</td>
-								<td >$11</td>
-								<td >$20</td>
-								<td ><a href="#" class="btn_editar"> Editar</a></td>
-								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
-							</tr>
-							<tr>
-								<td><label>0001</label></td>
-								<td >Ceveza XX 355ml</td>
-								<td >$11</td>
-								<td >$20</td>
-								<td ><a href="#" class="btn_editar"> Editar</a></td>
-								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
-							</tr>
-							<tr class="fila_par">
-								<td><label>0001</label></td>
-								<td >Ceveza XX 355ml</td>
-								<td >$11</td>
-								<td >$20</td>
-								<td ><a href="#" class="btn_editar"> Editar</a></td>
-								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
-							</tr>
-							<tr>
-								<td><label>0001</label></td>
-								<td >Ceveza XX 355ml</td>
-								<td >$11</td>
-								<td >$20</td>
-								<td ><a href="#" class="btn_editar"> Editar</a></td>
-								<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
-							</tr>
-						</tbody>
-				</table>
-			</article>		
+
+		<div class="nav_busqueda">
+			<ul>
+				<li class="li-categoria">
+					<label for="">Categoria: </label>
+					<select class="select_categoria" name="select_categoria">
+						<option value="">Bedidas</option>
+						<option value="">Platos fuertes</option>
+						<option value="">Entradas</option>
+						<option value="">Postres</option>
+					</select>
+					<a class="btn_ver" href="#"> Ver</a>
+				</li>
+
+				<li class="li-buscar">
+					<span></span>Buscar Producto:
+					<input type="text" placeholder="Buscar" />
+					<a class="btn_agregar" href="#"> Buscar</a>
+				</li>
+				<li class="li-botonera"><a class="btn_agregar" href="#"> Producto</a></li>
+				<li><a class="btn_agregar" href="#"> Categoria</a></li>
+			</ul>
+		</div>
+		<article class="secciones">
+			<table class="table_menu">
+					<thead class="table_head">
+						<tr>
+							<th colspan="6">Bebidas</th>
+						</tr>
+						<tr>
+							<td>Código:</td>
+							<td>Producto </td>
+							<td>Costo </td>
+							<td>Precio</td>
+							<td ></td>
+							<td ></td>
+						</tr>
+					</thead>
+					<tbody class="table_body">
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+					</tbody>
+			</table>
+		</article>		
+		<article class="secciones">
+			<table class="table_menu">
+					<thead class="table_head">
+						<tr>
+							<th colspan="6">Bebidas</th>
+						</tr>
+						<tr>
+							<td>Código:</td>
+							<td>Producto </td>
+							<td>Costo </td>
+							<td>Precio</td>
+							<td ></td>
+							<td ></td>
+						</tr>
+					</thead>
+					<tbody class="table_body">
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn_editar btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn_eliminar"> Eliminar</a></td>
+						</tr>
+					</tbody>
+			</table>
+		</article>		
 		</section>
 	
 	</body>
