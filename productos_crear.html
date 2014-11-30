@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Restaurant App</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilos.css">
+	</head >
+	<body>
+<!---------------- Menu principal---------------!-->		
+		<nav class="nav_principal">
+			<ul class="menu_nav">
+				
+					<li class="li-logo"><a class="icon-inicio" href="#"><span> Restaurante </span></a></li>
+					<li><a class="icon-restaurant" href="#"> <span> Mesas </span></a></li>
+					<li><a class="icon-productos"  href="#"> <span> Productos </span></a></li>
+					<li><a class="icon-reportes"   href="#"> <span> Reportes </span></a></li>
+					<li><a class="icon-config" 	   href="#"> <span> Configuraciones </span></a></li>
+
+					<li class="sesion"> <a class="icon-sesion" href="#">  Sesión </a></li>
+				
+			</ul>
+		</nav>	
+<!-- --------------------------------------------!-->		
+
+		<section class="menu Menu_Productos">
+			<article class="submenu">
+				<table class="table_menu">
+					<thead class="table_head">
+						<tr>
+							<th colspan="2"><span class="icon-nuevo"></span> Nuevo Producto </th>
+						</tr>
+					</thead>
+					<tbody class="table_body">
+
+						<tr >
+							<td >Nombre:</td>
+							<td><input class="input_formulario" type="text" placeholder="Nombre"/> </td>
+						</tr>
+						<tr>
+							<td ><label>Código:</label></td>
+							<td><input class="input_formulario" type="text" placeholder="Código"/> </td>
+						</tr>
+						
+						<tr>
+							<td ><label>Categoria:</label></td>
+							<td >
+								<select class="select_formulario" class="select_categoria" name="select_categoria">
+									<option value="">Bedidas</option>
+									<option value="">Platos fuertes</option>
+									<option value="">Entradas</option>
+									<option value="">Postres</option>
+								</select>
+							</td>
+						</tr>
+						<tr  class="fila_par">
+							<td ><label>Unidad:</label></td>
+							<td>
+								<select class="select_formulario" class="select_categoria" name="select_unidad">
+									<option value="">Unidad</option>
+									<option value="">Kg</option>
+									<option value="">Lts</option>
+								</select>
+							</td>
+						</tr>
+						<tr >
+							<td ><label>Costo:</label></td>
+							<td><input class="input_formulario" type="text" placeholder="Costo"/> </td>
+						</tr>
+						<tr  class="fila_par">
+							<td ><label>Precio de venta:</label></td>
+							<td><input class="input_formulario" type="text" placeholder="Precio de venta"/> </td>
+						</tr>
+						<tr>
+							<td ><label>Stock:</label></td>
+							<td><input class="input_formulario" type="text" placeholder="Existencia"/> </td>
+						</tr>
+						<tr  class="fila_par">
+							<td ><label>Descripción:</label></td>
+							<td><input class="input_formulario" type="text" placeholder="descripcion"/> </td>
+						</tr>
+						<tr>
+							<td ><label>Foto:</label></td>
+							<td><input class="input_formulario" type="text" placeholder="Foto"/> </td>
+						</tr>
+						<tr  class="fila_par">
+							<td ><label>Tipo:</label></td>
+							<td>
+								<select class="select_formulario" class="select_categoria" name="select_tipo">
+									<option value="">Sin ingredientes</option>
+									<option value="">Con ingredientes</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"></td>
+						</tr>					
+						<tr class="fila-secundaria" >
+							<td colspan="2">Ingredientes</td>
+						</tr>
+						<tr>
+							<td>Ingrediente</td>
+							<td>
+								<select class="select_formulario" class="select_categoria" name="select_tipo">
+									<option value="">Ingrediente X</option>
+									<option value="">Ingrediente XX</option>
+									<option value="">Ingrediente XXX</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="fila_par">
+							<td >Cantidad</td>
+							<td><input class="input_formulario" type="text" placeholder="Cantidad"/> </td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			
+			<!-- <article class="submenu">
+				<table class="table_menu">
+					<thead class="table_head">
+						<tr>
+							<th colspan="2">Ingredientes</th>
+						</tr>
+						<tr>
+							<td>Producto:</td>
+							<td>Queso Oaxaca</td>
+						</tr>
+					</thead>
+					<tbody class="table_body">
+						<tr>
+							<td><label>Categoria:</label></td>
+							<td >Quesos</td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>Precio por kg:</label></td>
+							<td >$80</td>
+						</tr>
+						<tr>
+							<td><label>Precio de venta:</label></td>
+							<td >$10</td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>Código:</label></td>
+							<td >123</td>
+						</tr>
+						<tr>
+							<td><label>Existencia:</label></td>
+							<td >10 kg</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			!-->
+
+		</section>		
+		
+		<section  class=" menu categoria_productos">
+
+		<div class="nav_busqueda">
+			<ul>
+				<li class="li-categoria">
+					<label for="">Categoria: </label>
+					<select class="select_categoria" name="select_categoria">
+						<option value="">Bedidas</option>
+						<option value="">Platos fuertes</option>
+						<option value="">Entradas</option>
+						<option value="">Postres</option>
+					</select>
+					<a class="btn btn_ver" href="#"> Ver </a>
+				</li>
+
+				<li class="li-buscar">
+					<span>Buscar Producto:</span>
+					<input  class="input_busqueda" type="text" placeholder="Buscar" />
+					<a class="btn btn_buscar" href="#"> Buscar</a>
+				</li>
+				<li class="li-botonera"><a class="btn btn_agregar" href="#"> Producto</a></li>
+				<li><a class="btn btn_agregar" href="#"> Categoria</a></li>
+			</ul>
+		</div>
+		<article class="secciones">
+			<table class="table_menu">
+					<thead class="table_head table_head_gris">
+						<tr>
+							<th colspan="10"><span class="icon-archivero"> </span> Bebidas</th>
+						</tr>
+						<tr>
+							<td>Código:</td>
+							<td>Producto </td>
+							<td >Unidad</td>
+							<td>Costo </td>
+							<td>Precio</td>
+							<td >Stock</td>
+							<td >Descripción</td>
+							<td >Tipo</td>
+							<td ></td>
+							<td ></td>
+						</tr>
+					</thead>
+					<tbody class="table_body table_body_secundario">
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td>Kg</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td>10</td>
+							<td>Ninguna</td>
+							<td>Con ingredientes</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+					</tbody>
+			</table>
+		</article>		
+		<!--
+		<article class="secciones">
+			<table class="table_menu">
+					<thead class="table_head">
+						<tr>
+							<th colspan="6"><span class="icon-archivero"> Bebidas</span></th>
+						</tr>
+						<tr>
+							<td>Código:</td>
+							<td>Producto </td>
+							<td>Costo </td>
+							<td>Precio</td>
+							<td ></td>
+							<td ></td>
+						</tr>
+					</thead>
+					<tbody class="table_body">
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr class="fila_par">
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+						<tr>
+							<td><label>0001</label></td>
+							<td >Ceveza XX 355ml</td>
+							<td >$11</td>
+							<td >$20</td>
+							<td ><a href="#" class="btn btn_editar_azul"> Editar</a></td>
+							<td ><a href="#" class="btn btn_eliminar"> Eliminar</a></td>
+						</tr>
+					</tbody>
+			</table>
+		</article>	
+		!-->	
+		</section>
+	
+	</body>
+</html>
+
+
+
+
+

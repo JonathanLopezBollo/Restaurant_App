@@ -97,6 +97,13 @@ body {
   font-family: "iconos";
   content: "\e60a";
 }
+.icon-nuevo {
+  font-size: 14px;
+}
+.icon-nuevo:before {
+  font-family: "iconos";
+  content: "\e621";
+}
 select {
   height: 28px;
 }
@@ -173,8 +180,23 @@ select {
   color: #213338;
   height: 1.6em;
 }
-input {
+.select_formulario {
   color: #213338;
+  width: 90%;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.input_formulario {
+  color: #213338;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 90%;
+}
+.input_busqueda {
+  color: #213338;
+  height: 1.2em;
 }
 .nav_busqueda {
   font-weight: bold;
