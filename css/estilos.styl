@@ -85,32 +85,33 @@ body
 			content "\e61d"
 	&.btn_agregar
 		background azul_suave
-		padding 0.3em
+		padding 0.2em
 		&:before
 			font-family "iconos"
 			content "\e621"
 		
 	&.btn_ver
 		background azul_suave
-		padding 0.3em
+		padding 0.2em
 		&:before
 			font-family "iconos"
 			content "\e647"
 	&.btn_buscar
 		background azul_suave
-		padding 0.3em	
+		padding 0.2em	
 		&:before
 			font-family "iconos"
 			content "\e63f"
+			 
 	&.btn_reporte
 		background azul_suave
-		padding 0.3em
+		padding 0.2em
 		&:before
 			font-family "iconos"
 			content "\e604"
 	&.btn_imprimir
 		background azul_suave
-		padding 0.3em
+		padding 0.2em
 		&:before
 			font-family "iconos"
 			content "\e647"
@@ -133,13 +134,35 @@ body
 		&:before
 			font-family "iconos"
 			content "\e623"
+	&.icon-ocupado
+		font-size 14px
+		background rojo
+		color white
+		padding 0.3em
+		&:before
+			font-family "iconos"
+			content "\e623"
+	&.icon-libre
+		font-size 14px
+		background verdoso2
+		color white
+		padding 0.3em
+		&:before
+			font-family "iconos"
+			content "\e623"
 	&.icon-calendar
 		font-size 16px
 		font-weight normal
 		&:before
 			font-family "iconos"
-			content "\e63a"			
-			
+			content "\e63a"		
+	&.icon-mapa
+		font-size 16px
+		font-weight normal
+		&:before
+			font-family "iconos"
+			content "\e636"			
+		
 		
 select
 	height 28px
@@ -214,7 +237,17 @@ select
 					color gris
 					border 1px solid marron
 					border-bottom 1px solid gris
-			
+		&.table_head_azul_fuerte
+			tr
+				th
+					background azul_btn
+					color white
+				td
+					background marron
+					color gris
+					border 1px solid marron
+					border-bottom 1px solid gris	
+					padding 0.3em
 					
 
 	.table_body
@@ -367,7 +400,8 @@ select
 	
 .table_mesas
 	width 100%
-	height 95%
+	height 85%
+	margin 0
 	//border 4px solid azul
 	tr
 		//border 4px solid azul
