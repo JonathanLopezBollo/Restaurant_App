@@ -103,7 +103,23 @@ body {
 }
 .btn.btn_buscar:before {
   font-family: "iconos";
-  content: "\e64e";
+  content: "\e604";
+}
+.btn.btn_reporte {
+  background: #008fd5;
+  padding: 0.3em;
+}
+.btn.btn_reporte:before {
+  font-family: "iconos";
+  content: "\e604";
+}
+.btn.btn_imprimir {
+  background: #008fd5;
+  padding: 0.3em;
+}
+.btn.btn_imprimir:before {
+  font-family: "iconos";
+  content: "\e647";
 }
 .icon-archivero {
   color: #fff;
@@ -128,6 +144,14 @@ body {
 .icon-cubiertos:before {
   font-family: "iconos";
   content: "\e623";
+}
+.icon-calendar {
+  font-size: 16px;
+  font-weight: normal;
+}
+.icon-calendar:before {
+  font-family: "iconos";
+  content: "\e63a";
 }
 select {
   height: 28px;
@@ -155,7 +179,7 @@ select {
   width: 98.5%;
   margin: 0.5%;
   margin-top: 3px;
-  margin-bottom: 6%;
+  margin-bottom: 4%;
   border: 1px solid #213338;
 }
 .table_menu .table_head {
@@ -192,6 +216,16 @@ select {
   color: #213338;
   border: 1px solid #213338;
 }
+.table_menu .table_head.table_head_azul tr th {
+  background: #213338;
+  color: #fff;
+}
+.table_menu .table_head.table_head_azul tr td {
+  background: #efeee5;
+  color: #213338;
+  border: 1px solid #efeee5;
+  border-bottom: 1px solid #213338;
+}
 .table_menu .table_body tr td {
   background: #fff;
   border: 1px solid #213338;
@@ -214,6 +248,7 @@ select {
   background: #2ecc71;
 }
 .table_menu .table_body .fila_boton td {
+  border: 2px solid #213338;
   height: 3em;
 }
 .table_menu .table_body.table_body_secundario tr td {
@@ -293,10 +328,6 @@ select {
   margin-bottom: 3%;
   margin-top: 2%;
 }
-.submenu {
-  height: 30%;
-  margin-bottom: 10%;
-}
 .menu {
   text-align: center;
   background: #fff;
@@ -313,6 +344,7 @@ select {
   border: 1px solid #ccc;
   float: left;
   width: 20.4%;
+  height: 94%;
 }
 .menu.categoria_productos {
   margin: 0.3%;
@@ -329,6 +361,13 @@ select {
   float: right;
   text-align: center;
   width: 68.5%;
+  height: 94%;
+}
+.menu.seccion_reportes {
+  margin-left: 1%;
+  border: 1px solid #ccc;
+  text-align: center;
+  width: 98%;
   height: 94%;
 }
 .table_mesas {

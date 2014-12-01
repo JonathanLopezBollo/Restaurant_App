@@ -110,7 +110,19 @@ body
 		padding  0.3em	
 		&:before
 			font-family "iconos"
-			content "\e64e"
+			content "\e604"
+	&.btn_reporte
+		background azul_suave
+		padding 0.3em
+		&:before
+			font-family "iconos"
+			content "\e604"
+	&.btn_imprimir
+		background azul_suave
+		padding 0.3em
+		&:before
+			font-family "iconos"
+			content "\e647"
 
 .icon-archivero
 		color white
@@ -130,6 +142,13 @@ body
 		&:before
 			font-family "iconos"
 			content "\e623"
+	&.icon-calendar
+		font-size 16px
+		font-weight normal
+		&:before
+			font-family "iconos"
+			content "\e63a"			
+			
 		
 select
 	height 28px
@@ -159,7 +178,7 @@ select
 	width 98.5%
 	margin 0.5%
 	margin-top 3px
-	margin-bottom 6%
+	margin-bottom 4%
 	border 1px solid gris		
 	.table_head
 		color white
@@ -194,6 +213,19 @@ select
 					background verdoso
 					color gris
 					border 1px solid gris
+		&.table_head_azul
+			tr
+				th
+					background gris
+					color white
+				td
+					background marron
+					color gris
+					border 1px solid marron
+					border-bottom 1px solid gris
+			
+					
+
 	.table_body
 		tr
 			td
@@ -220,6 +252,7 @@ select
 					background verdoso2
 		.fila_boton
 			td
+				border 2px solid gris
 				height 3em
 	
 		&.table_body_secundario
@@ -301,8 +334,7 @@ select
 	margin-bottom 3%	
 	margin-top 2%	
 .submenu
-	height 30%	
-	margin-bottom 10%	
+
 	//border 1px solid gris
 .menu
 	text-align center
@@ -319,6 +351,7 @@ select
 		border 1px solid borde_gris
 		float left
 		width 20.4%	
+		height 94%
 	&.categoria_productos //hereda de menu
 		margin 0.3%
 		margin-left 0%
@@ -333,6 +366,13 @@ select
 		float right
 		text-align center
 		width 68.5%
+		height 94%
+		
+	&.seccion_reportes
+		margin-left 1%
+		border 1px solid borde_gris
+		text-align center
+		width 98%
 		height 94%
 	
 .table_mesas
