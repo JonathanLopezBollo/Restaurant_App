@@ -73,10 +73,7 @@ body {
   content: "\e61d";
 }
 .btn.btn_agregar {
-  background: #fff;
-  color: #213338;
-  font-weight: bold;
-  font-size: 14px;
+  background: #008fd5;
   padding: 0.3em;
 }
 .btn.btn_agregar:before {
@@ -84,10 +81,7 @@ body {
   content: "\e621";
 }
 .btn.btn_ver {
-  background: #fff;
-  color: #213338;
-  font-weight: bold;
-  font-size: 14px;
+  background: #008fd5;
   padding: 0.3em;
 }
 .btn.btn_ver:before {
@@ -95,15 +89,12 @@ body {
   content: "\e647";
 }
 .btn.btn_buscar {
-  background: #fff;
-  color: #213338;
-  font-weight: bold;
-  font-size: 14px;
+  background: #008fd5;
   padding: 0.3em;
 }
 .btn.btn_buscar:before {
   font-family: "iconos";
-  content: "\e604";
+  content: "\e63f";
 }
 .btn.btn_reporte {
   background: #008fd5;
@@ -179,7 +170,7 @@ select {
   width: 98.5%;
   margin: 0.5%;
   margin-top: 3px;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
   border: 1px solid #213338;
 }
 .table_menu .table_head {
@@ -326,7 +317,6 @@ select {
   width: 95%;
   height: 25%;
   margin-bottom: 3%;
-  margin-top: 2%;
 }
 .menu {
   text-align: center;
